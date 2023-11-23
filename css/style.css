@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.input-container {
+  width: 185px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.input-container.second {
+  grid-row: 2;
+}
+
+label {
+  margin-bottom: 2px;
+}
+
+.btn-converter {
+  display: block;
+  width: 100px;
+  align-self: flex-end;
+  height: 30px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-template-columns: 1fr;
+  background-color: plum;
+  padding: 20px;
+  margin-top: 300px;
+  border-radius: 5px;
+}
+
+#binary :focus {
+  background-color: brown;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
