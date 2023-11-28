@@ -23,9 +23,10 @@ body {
 .container-b,
 .container-d {
   color: #ffffff;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .container-b input,
@@ -40,8 +41,7 @@ body {
 }
 
 .converter {
-  max-width: max-content;
-  width: 202px;
+  width: 210px;
   padding: 16px 32px;
   font-size: 1.8rem;
   cursor: pointer;
@@ -53,4 +53,14 @@ body {
 
 .converter:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+span {
+  position: relative;
+  max-width: 200px;
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
