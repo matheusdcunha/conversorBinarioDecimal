@@ -5,20 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Binário para Decimal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div class="modal">
-    <div class="input-container first">
-      <label for="binary">Número Binário</label>
-      <input type="number" name="binary" id="binary" placeholder="10110">
+  <div class="main-container">
+    <div class="container-b">
+      <label for="binary">Valor Binário:</label>
+      <input type="text" id="binary" name="binary">
     </div>
-    <div class="input-container second">
-      <label for="decimal">Número Decimal</label>
-      <input type="number" name="decimal" id="decimal" readonly>
+    <div class="container-d">
+      <label for="dec">Valor Decimal:</label>
+      <input type="text" id="dec" name="dec">
     </div>
-    <button class="btn-converter">Converter</button>
+    <button class="converter">Converter</button>
   </div>
   <script type="module" src="./js/script.js"></script>
 </body>

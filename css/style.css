@@ -1,52 +1,56 @@
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #717171;
+}
+
+.main-container {
+  margin-top: 200px;
+  width: 450px;
+  height: 400px;
+  background-color: #404040;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.input-container {
-  width: 185px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.input-container.second {
-  grid-row: 2;
-}
-
-label {
-  margin-bottom: 2px;
-}
-
-.btn-converter {
-  display: block;
-  width: 100px;
-  align-self: flex-end;
-  height: 30px;
-}
-
-.modal {
+.container-b,
+.container-d {
+  color: #ffffff;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  grid-template-columns: 1fr;
-  background-color: plum;
-  padding: 20px;
-  margin-top: 300px;
-  border-radius: 5px;
 }
 
-#binary :focus {
-  background-color: brown;
+.container-b input,
+.container-d input {
+  font-size: 2rem;
+  max-width: 200px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.container-b label,
+.container-d label {
+  font-size: 1.6rem;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
+.converter {
+  max-width: max-content;
+  width: 202px;
+  padding: 16px 32px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: #332200;
+  border: none;
+  border-radius: 3px;
+}
+
+.converter:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
