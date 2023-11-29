@@ -12,8 +12,11 @@ export default class ConverterBinary {
     const parentBinary = this.binary.parentNode;
 
     if (!/^[01]+$/.test(binary)) {
-      parentBinary.lastChild.innerHTML = "";
-      parentBinary.appendChild(spanErro);
+      if (!parentBinary.lastChild.innerHTML == "") {
+      } else {
+        parentBinary.lastChild.innerHTML = "";
+        parentBinary.appendChild(spanErro);
+      }
     } else {
       parentBinary.lastChild.innerHTML = "";
       if (!isNaN(binary)) binary = binary.toString();
