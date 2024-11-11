@@ -54,7 +54,7 @@ export default class ConverterBinary {
 
   init() {
     if (this.binary && this.decimalOutput && this.button) this.addEventButton();
-
+    console.log("Teste");
     return this;
   }
 }
